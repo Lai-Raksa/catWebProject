@@ -1,0 +1,36 @@
+
+-- user table
+CREATE TABLE users (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    email VARCHAR(255) NOT NULL UNIQUE,
+    username VARCHAR(255) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ,
+    updated_at DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+-- blog table
+
+CREATE TABLE blogs (
+    blog_id INT PRIMARY KEY AUTO_INCREMENT,
+    category VARCHAR(255) NOT NULL,
+    title VARCHAR(255) NOT NULL,
+    paragraph MEDIUMTEXT NOT NULL,
+    image VARCHAR(255) NOT NULL,
+    link VARCHAR(255),
+    info_id INT 
+);
+
+CREATE TABLE blogs_info (
+    i_id INT PRIMARY KEY AUTO_INCREMENT,
+    viewer INT DEFAULT 0,
+    p1 MEDIUMTEXT,
+    p2 MEDIUMTEXT,
+    p3 MEDIUMTEXT,
+    op1 VARCHAR(255),
+    op2 VARCHAR(255),
+    op3 VARCHAR(255),
+    op4 VARCHAR(255),
+    op5 VARCHAR(255),
+    op6 VARCHAR(255)
+);

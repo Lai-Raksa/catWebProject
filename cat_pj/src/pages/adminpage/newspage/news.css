@@ -1,0 +1,12 @@
+.adminarticle{
+    width: 100%;
+    height: 100%;
+    background-color: #1f1f1f;
+    font-family: 'Nunito', sans-serif;
+}
+
+.adminarticle .main-content{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}

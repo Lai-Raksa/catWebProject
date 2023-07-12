@@ -1,0 +1,93 @@
+.register{
+    margin-top: 60px;
+    padding: 20px 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 300px;
+}
+
+.register .path-container{
+    margin-bottom: 16px;
+}
+
+.register .path-container h4{
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.register .path-container p{
+    font-size: 14px;
+    color: #fff;
+}
+
+.register .path-container p span:nth-child(1){
+    color: #fff;
+}
+
+.register .path-container p span:nth-child(2){
+    color: #fff;
+}
+
+.register .user-form{
+    background: #fff;
+    width: 100%;
+    height: calc(100vh - 170px);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.register .user-form .input-field{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.register .user-form label{
+    color: #444444;
+    line-height: 1.5;
+    padding: 7px 12px;
+    width: 300px;
+}
+
+.register .user-form .input-field input{
+    padding: 6px 12px;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid silver;
+    color: #212529;
+    font-size: 16px;
+}
+
+.register .user-form button{
+    border: none;
+    background: rgb(0, 0, 0);
+    color: #fff;
+    border-radius: 25px;
+    width: 100%;
+    padding: 10px 0;
+    align-self: center;
+    cursor: pointer;
+}
+
+.register .user-form button:hover{
+    background: rgb(46, 47, 48);
+}
+
+@media (max-width: 1200px){
+    .register{
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 764px){
+
+    .register .user-form .paragraph-field,
+    .register .user-form .input-field{
+        flex-direction: column;
+    }
+
+    .register .user-form label{
+        padding: 6px 0;
+    }
+}

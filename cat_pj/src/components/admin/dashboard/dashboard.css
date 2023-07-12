@@ -1,0 +1,193 @@
+.dashboard{
+    margin-top: 60px;
+    padding: 20px 30px;
+    width: 100%;
+    margin-left: 300px;
+    min-height: calc(100vh - 10vh);
+}
+
+.dashboard .path-container{
+    margin-bottom: 16px;
+}
+
+.dashboard .path-container h4{
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.dashboard .path-container p{
+    font-size: 14px;
+    color: #fff;
+}
+
+.dashboard .path-container p span:nth-child(1){
+    color: #fff;
+}
+
+.dashboard .path-container p span:nth-child(2){
+    color: #fff;
+}
+
+.dashboard .detail-container{
+    display: flex;
+    gap: 24px;
+}
+
+/* .dashboard .detail-container > * {
+    border: 1px solid black;
+} */
+
+.dashboard .detail-container .left-container{
+    flex: 2;
+}
+
+.dashboard .detail-container .left-container .traffic{
+    display: flex;
+    gap: 24px;
+}
+
+.dashboard .detail-container .left-container .traffic .box{
+    flex-basis: 100%;
+    background: #fff;
+    padding: 20px 20px 40px 20px;
+    border-radius: 10px;
+}
+
+.dashboard .detail-container .left-container .traffic .box p{
+    font-size: 14px;
+    color: #899bbd;
+    margin-bottom: 18px;
+}
+
+.dashboard .detail-container .left-container .traffic .box p span:nth-child(1){
+    font-size: 18px;
+    color: #012970;
+}
+
+.dashboard .detail-container .left-container .traffic .box p span:nth-child(2){
+    font-weight: 350;
+}
+
+.dashboard .detail-container .left-container .traffic .box .logo-ct{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.dashboard .detail-container .left-container .traffic .box .logo-ct i{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: #f6f6fe;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #4154f1;
+}
+
+.dashboard .detail-container .left-container .traffic .box .logo-ct i svg{
+    width: 32px;
+    width: 32px;
+}
+
+.dashboard .detail-container .left-container .traffic .box .logo-ct .desc{
+    display: flex;
+    flex-direction: column;
+}
+
+.dashboard .detail-container .left-container .traffic .box .logo-ct .desc h4{
+    font-size: 28px;
+    color: #012970;
+}
+
+.dashboard .detail-container .left-container .traffic .box .logo-ct .desc p{
+    font-size: 14px;
+}
+
+.dashboard .detail-container .left-container .traffic .box .logo-ct .desc p span:nth-child(1){
+    font-size: 14px;
+    font-weight: 600;
+    color: green;
+}
+
+.dashboard .detail-container .left-container .traffic .box .logo-ct .desc p span:nth-child(2){
+    font-weight: 300;
+}
+
+.dashboard .detail-container .right-container{
+    flex: 1;
+}
+
+.dashboard .detail-container .right-container .activity{
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.dashboard .detail-container .right-container .activity p{
+    font-size: 14px;
+    color: #899bbd;
+    margin-bottom: 18px;
+}
+
+.dashboard .detail-container .right-container .activity p span:nth-child(1){
+    font-size: 18px;
+    color: #012970;
+}
+
+.dashboard .detail-container .right-container .activity p span:nth-child(2){
+    font-weight: 350;
+}
+
+.dashboard .detail-container .right-container .activity .response{
+    min-height: 400px;
+}
+
+.dashboard .detail-container .right-container .activity .response .message{
+    border-bottom: 1px solid rgb(231, 231, 231);
+    margin-top: 10px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+}
+
+/* .dashboard .detail-container .right-container .activity .response .message h4{
+    padding: 5px 20px;
+} */
+
+.dashboard .detail-container .right-container .activity .response .message h4 span:nth-child(1){
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.dashboard .detail-container .right-container .activity .response .message h4 span:nth-child(2){
+    font-size: 10px;
+    font-weight: 300;
+}
+
+.dashboard .detail-container .right-container .activity .response .message p{
+    margin: 0;
+    font-size: 12px;
+    display: -webkit-box;
+    max-width: 400px;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@media (max-width: 1200px){
+    .dashboard{
+        padding: 20px;
+        margin-left: 0;
+    }
+    .dashboard .detail-container .left-container .traffic{
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 764px){
+    .dashboard .detail-container{
+        flex-direction: column;
+    }
+}

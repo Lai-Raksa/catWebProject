@@ -1,0 +1,86 @@
+.topbar{
+    width: 100%;
+    height: 60px;
+    background: rgb(12,12,12);
+    box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 16px;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+
+.topbar .left-side{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.topbar .left-side .logo-container{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.topbar .left-side .logo-container img{
+    width: 24.5px;
+    height: 26px;
+    margin-right: 6px;
+}
+
+.topbar .left-side .logo-container p{
+    margin: 0;
+    font-size: 26px;
+    font-weight: 700;
+    color: #ffffff;
+    font-family: "Nunito", sans-serif;
+}
+
+.topbar .left-side .hamburger{
+    cursor: pointer;
+    display: none;
+}
+
+.topbar .left-side .hamburger svg{
+    width: 30px;
+    color: #ffffff;
+}
+
+.topbar .right-side .logo-container{
+    width: 250px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 5px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.topbar .right-side .logo-container img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.topbar .right-side .logo-container p{
+    color: #fff;
+    margin: 0;
+}
+
+@media (max-width: 1200px){
+    .topbar .left-side .hamburger{
+        display: block;
+    }
+}
+
+@media (max-width: 763px){
+    .topbar .left-side .logo-container{
+        display: none;
+    }
+    .topbar .right-side .logo-container{
+        width: 200px;
+    }
+}
